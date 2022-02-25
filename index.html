@@ -52,19 +52,40 @@
                 </div>
             </nav>
     </header>
-    <main class="mainIndex">
-        <section class="center">
-            <div class="textSup">
-                <h3>Inspirando confianza desde 1972...</h3>
-            </div>
-            <div class="imgFrente">
-                <img src="img/frente 22.jpg" alt="" class="imgIndex">
-                
-            </div>
-            <div class="imgFrente2">
-               <img src="img/frente1.jpg" alt="" class="imgIndex">
-            </div>
-        </section>
+    <main class="mainIndex">    
+        <div class="container" id="mainDiv">
+           <div class="row" id="filaUnoIndex">
+                <div class="col" id="colTextIndex">
+                        <h3>Inspirando confianza desde 1972...</h3>
+                        <div class="lineaIndex"></div>
+                </div>
+           </div> 
+           <div class="row" id="filaDosIndex">
+                <div class="col">
+                    <div class="container">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" id="carouselPadre">
+                              <div class="carousel-item active" >
+                                <img src="img/frente 22.jpg" class="d-block w-100" alt="..." id="imgUnoCarousel">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/frente1.jpg" class="d-block w-100" alt="..." id="imgDosCarousel">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div> 
+                </div>
+           </div>
+        </div>
+
     </main>
     <footer class="footer">
         <div class="infofooter">
@@ -77,8 +98,8 @@
                 <li><a href="https://twitter.com/ZheoAgustin" target="_blank">Twitter</a></li>
             </ul>
         </div>
-        <div class="infofooter">
-            <h4>Av. Motolandia 2199</h4>
+        <div class="infofooter2">
+            <h4>Av.Motolandia 2199</h4>
         </div>
     </footer>
 </body>
