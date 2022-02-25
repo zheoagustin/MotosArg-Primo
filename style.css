@@ -103,6 +103,7 @@ a{
     cursor: pointer;
     color: white;
     margin-left: 5px;
+    margin-top: 10px;
 }
 .busqueda:hover input{
     width: 180px;
@@ -169,9 +170,9 @@ a{
     font-family: cursive;
     font-size: 12px;
 }
-.infofooter {
+.infofooter h4{
     font-family: monospace;
-    font-size: 12px;
+    font-size: 12px !important;
     color:rgb(235, 235, 235) ;
     margin: 0px 10px;
 
