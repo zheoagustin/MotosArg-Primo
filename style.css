@@ -205,11 +205,11 @@ a{
 }
 
 #imgUnoCarousel {
-    border-radius: 20px;
+    border-radius: 5px;
 
 }
 #imgDosCarousel {
-    border-radius: 20px;
+    border-radius: 5px;
 
 }
 #colTextIndex h3 {
@@ -435,11 +435,17 @@ element.style {
     grid-area: t2;
     align-self: end;
     font-size: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 70px;
 }
 .centerText p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 60%;
+}
+#carouselSobrenos {
+    background-color: rgb(65, 65, 65);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px gray;
 }
 /*main sobrenosotros FIN*/
 /*main contacto*/
