@@ -205,11 +205,11 @@ a{
 }
 
 #imgUnoCarousel {
-    border-radius: 50px;
+    border-radius: 20px;
 
 }
 #imgDosCarousel {
-    border-radius: 50px;
+    border-radius: 20px;
 
 }
 #colTextIndex h3 {
@@ -244,13 +244,12 @@ a{
 
 /*off road main*/
 .centerOffRoad {
-    height: 100vh;
+    height: 30vh;
     width: 100vw;
     display: grid;
-    grid-template-columns:40% 40% ;
-    grid-template-rows: 200px 500px ;
-    grid-template-areas: "a1 a1"
-                         "a2 a2";
+    grid-template-columns:40% 40%;
+    grid-template-rows: 200px ;
+    grid-template-areas: "a1 a1";
     justify-items: center;
     align-items: center;
     justify-items: center;
@@ -276,8 +275,6 @@ a{
     text-align: center;
 
 }
-
-
 .lineaOffRoad {
     align-items: center;
     width: 60%;
@@ -291,64 +288,47 @@ a{
     animation-duration: 30s;
     animation-iteration-count: infinite;
 }
-.catalogoOffRoad img{
+#filaUnoOffroad {
+
+    height: 300px;
+}
+#filaDosOffroad {
+    margin-bottom: 120px;
+    margin-top: 140px;
+    height: 300px;
+}
+.btn {
+    width:100%;
+    height: auto;
+}
+.btn-primary {
+    background-color: #ce2d2d !important;
+    border-color:#b12525 !important;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    box-shadow: 0 0 0 0 !important;
+}
+.btn-primary:hover {
+    background-color:rgb(189, 8, 8) !important;
+}
+.h5 , h5 {
+    text-align: center;
+}
+.card-body p {
+    text-align: center;
+}
+element.style {
+    width: 100%;
+}
+.card {
+    flex-wrap: wrap !important;
+    height: auto;
+    box-shadow: 10px 10px 10px gray;
+    width: 70%;
+}
+.card-body img {
     width: 100%;
     height: 100%;
-}
-.catalogoOffRoad {
-    justify-content: center;
-    grid-area: a2;
-    display: grid;
-    grid-template-columns:50% 50% 50% ;
-    grid-template-rows: 200px 200px ;
-    grid-template-areas: "c1 c2 c3"
-                         "c4 c5 c6";
-    row-gap: 10%;
-    column-gap: 10%;
-}
-#xr {
-    grid-area: c1;
-}
-#xtt {
-    grid-area: c2;
-}
-#tenere {
-    grid-area: c3;
-}
-#tornado {
-    grid-area: c4;
-}
-#xre {
-    grid-area: c6;
-}
-.cuadros {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    text-align: center;
-    border: 1px solid black;
-    box-shadow: 5px 5px 5px grey;
-}
-
-.cuadros h3{
-    margin: 10px 0px;
-
-}
-.cuadros h5{
-    margin: 5px 0px;
-    color: rgb(100, 100, 100);
-    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: italic;
-
-}
-.cuadros p{
-    margin: 10px 10px;
-    color: rgb(100, 100, 100);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
-}
-.cuadros img{
-    margin:10px 10px;
 }
 /*main classic*/
 .centerClassic {
@@ -629,25 +609,36 @@ a{
         grid-area: a1;
         align-self: center;
     }
-    .imgFrente {
-        grid-area: a2;
-        box-shadow: none;
-
+    #imgUnoCarousel {
+        border-radius: 0px;
+        margin-top: 50px;
+    
     }
-    .imgFrente2{
-        grid-area: a3;
-        box-shadow: none;
-    }
-    .center img {
-        width: 100%;
-        height: 100%;
-    }
-    @keyframes imgIndex {
-        0% {box-shadow: 0px 0px 0px 0px rgb(173, 173, 173); }
-        50% {box-shadow: 0px 0px 0px 0px rgb(114, 114, 114);}
+    #imgDosCarousel {
+        border-radius: 0px;
+        margin-top: 50px;
+    
     } 
     #filaDosIndex {
         height: 400px;
+    }
+    .lineaIndex {
+        align-items: center;
+        width: 100%;
+        height: 1px;
+        margin: 0px 0px;
+        box-shadow: 4px 1px 2px gray;
+        background-color: black;
+        animation-name: lineaContacto;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        margin-top: 20px;
+    }
+    .card {
+        flex-wrap: wrap !important;
+        height: auto;
+        box-shadow: 5px 5px 5px gray;
+        width: 100%;
     }
 /*off road main responsive*/
 .centerOffRoad {
