@@ -1,0 +1,731 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box; }
+
+body {
+  background-color: #ebebeb;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  background-image: url(blanco1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+  overflow-x: hidden; }
+  body a {
+    color: white; }
+
+header {
+  width: 100%;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.main {
+  width: 100vw; }
+
+.navContainer {
+  background-color: #ce2d2d;
+  display: flex;
+  margin: 0px 0px 0px 0px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.navBar {
+  width: 100%; }
+
+.formNav {
+  list-style: none;
+  padding: 0;
+  width: auto;
+  max-width: 800px;
+  margin: 0px 10px 0px 0px; }
+  .formNav li {
+    display: inline-block;
+    align-items: center; }
+    .formNav li a {
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      padding: 10px;
+      display: block;
+      transition: 0.3s; }
+
+.formNav li a:hover {
+  transition: 0.3s;
+  background-color: #bd0808;
+  color: #e6e6e6; }
+
+.busqueda {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  margin: 0px 0px 0px 0px; }
+  .busqueda input {
+    width: 100px;
+    padding: 0px 0px;
+    height: 25px;
+    font-size: 13px;
+    color: black;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #a0a0a0;
+    box-shadow: 5px 5px 5px black;
+    transition: 1s; }
+
+.busqueda:hover input {
+  width: 180px;
+  height: 25px;
+  border: 1px solid white;
+  transition: 0.6s; }
+
+.btn {
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50px;
+  background-color: #af0101;
+  cursor: pointer;
+  color: white;
+  margin-left: 5px;
+  margin-top: 10px; }
+
+.logo {
+  display: inline-block;
+  position: relative; }
+  .logo h1 {
+    display: inline-block;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    align-items: center;
+    font-size: 40px;
+    padding: 10px; }
+  .logo i {
+    display: inline-block;
+    font-size: 35px;
+    align-items: center;
+    color: white; }
+
+.logosredes {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%; }
+  .logosredes i {
+    margin: 5px 10px;
+    font-size: 30px; }
+
+.contenedorFlex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: right; }
+
+.footer {
+  background-color: #414141;
+  position: absolute;
+  width: 100%;
+  bottom: 0vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px; }
+
+.redesUl {
+  display: flex;
+  list-style: none; }
+  .redesUl li {
+    margin: 0px 5px; }
+    .redesUl li a {
+      text-decoration: none;
+      color: #ebebeb;
+      font-family: cursive;
+      font-size: 12px; }
+
+.infofooter h4 {
+  font-family: monospace;
+  font-size: 12px !important;
+  color: #ebebeb;
+  margin: 0px 10px; }
+
+.infofooter2 h4 {
+  font-family: monospace;
+  font-size: 12px !important;
+  color: #ebebeb;
+  margin-right: 10px; }
+
+.infofooter2 {
+  justify-content: start; }
+
+.mainIndex {
+  width: 100%; }
+
+#filaUnoIndex {
+  height: 200px; }
+
+#filaDosIndex {
+  height: 800px; }
+
+#imgUnoCarousel {
+  border-radius: 5px; }
+
+#imgDosCarousel {
+  border-radius: 5px; }
+
+#colTextIndex h3 {
+  align-items: center;
+  text-align: center;
+  margin-top: 60px; }
+
+#colTextIndex .lineaIndex {
+  align-items: center;
+  width: 100%;
+  height: 1px;
+  margin: 0px 0px;
+  box-shadow: 4px 1px 2px gray;
+  background-color: black;
+  animation-name: lineaContacto;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; }
+
+/*off road main*/
+.centerOffRoad {
+  height: 30vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 200px;
+  grid-template-areas: "a1 a1";
+  justify-items: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center; }
+
+.textoOffRoad {
+  align-items: center;
+  grid-area: a1; }
+  .textoOffRoad h3 {
+    margin: 15px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    text-align: center; }
+  .textoOffRoad .p1 {
+    text-align: center;
+    font-family: cursive; }
+  .textoOffRoad .p2 {
+    text-align: center;
+    font-family: cursive; }
+
+.lineaOffRoad {
+  align-items: center;
+  width: 60%;
+  height: 1px;
+  margin: 0px 0px;
+  grid-area: a1;
+  box-shadow: 2px 2px 2px gray;
+  align-self: end;
+  background-color: black;
+  animation-name: linea;
+  animation-duration: 30s;
+  animation-iteration-count: infinite; }
+
+.container #filaUnoOffroad {
+  height: 300px; }
+
+.container #filaDosOffroad {
+  margin-bottom: 120px;
+  margin-top: 140px;
+  height: 300px; }
+
+.card {
+  flex-wrap: wrap !important;
+  height: auto;
+  box-shadow: 10px 10px 10px gray;
+  width: 70%; }
+  .card h5 {
+    text-align: center; }
+  .card .card-body img {
+    width: 100%;
+    height: 100%; }
+  .card .card-body p {
+    text-align: center; }
+  .card .card-body img:hover {
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: 1s; }
+  .card .btn {
+    width: 100%;
+    height: auto; }
+  .card .btn-primary {
+    background-color: #ce2d2d !important;
+    border-color: #b12525 !important; }
+  .card .btn-check:focus + .btn-primary, .card .btn-primary:focus {
+    box-shadow: 0 0 0 0 !important; }
+  .card .btn-primary:hover {
+    background-color: #bd0808 !important; }
+
+/*main classic*/
+.centerClassic {
+  height: 30vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 200px;
+  grid-template-areas: "a1 a1";
+  justify-items: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center; }
+  .centerClassic .lineaClassic {
+    align-items: center;
+    height: 1px;
+    margin: 0px 0px;
+    grid-area: a1;
+    align-self: end;
+    box-shadow: 2px 2px 2px gray;
+    animation-name: linea;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    background-color: black; }
+
+@keyframes linea {
+  0% {
+    width: 0%;
+    color: black; }
+  50% {
+    width: 60%;
+    background-color: black; }
+  100% {
+    width: 0%;
+    color: black; } }
+  .centerClassic .textoClassic {
+    align-items: center;
+    grid-area: a1; }
+    .centerClassic .textoClassic h3 {
+      margin: 15px;
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 45px;
+      text-align: center; }
+    .centerClassic .textoClassic .p1 {
+      text-align: center;
+      font-family: cursive; }
+
+/*main classic fin*/
+/*main sobrenosotros*/
+.centerText {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 600px;
+  grid-template-areas: "t1 t1" "t2 t2";
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  justify-items: center; }
+  .centerText h3 {
+    margin: 20px 0px 40px 0px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px; }
+  .centerText p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 60%; }
+  .centerText .primerParrafo {
+    grid-area: t2;
+    justify-content: center;
+    font-size: 25px;
+    align-self: start;
+    margin: 35px 0px 0px 0px; }
+  .centerText .segundoParrafo {
+    text-align: center;
+    grid-area: t2;
+    align-self: end;
+    font-size: 20px;
+    margin-bottom: 70px; }
+  .centerText .quienesSomos {
+    grid-area: t1; }
+  .centerText .lineaSobreNosotros {
+    align-items: center;
+    height: 1px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0px 0px;
+    grid-area: t2;
+    box-shadow: 2px 2px 2px gray;
+    align-self: start;
+    animation-name: linea;
+    animation-duration: 15s;
+    animation-iteration-count: infinite; }
+
+#carouselSobrenos {
+  background-color: #414141;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px gray; }
+
+/*main sobrenosotros FIN*/
+/*main contacto*/
+.sectionGrid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 250px;
+  grid-template-areas: "cto1 cto1";
+  justify-content: center;
+  justify-items: center;
+  align-items: center; }
+
+.lineaContacto {
+  align-items: center;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: 0px 0px;
+  grid-area: cto1;
+  align-self: center;
+  animation-name: lineaContacto;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; }
+
+@keyframes lineaContacto {
+  0% {
+    width: 100%; }
+  50% {
+    width: 0%; } }
+
+.TextCto {
+  align-items: end;
+  grid-area: cto1;
+  margin: 20px 0px;
+  font-family: cursive;
+  font-size: 20px; }
+
+.TextContacto {
+  font-size: 20px;
+  margin-top: 30px; }
+
+.formText {
+  grid-area: cto1;
+  width: 100%;
+  text-align: center;
+  justify-self: center; }
+
+.formText h3 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 45px; }
+
+.formContacto {
+  width: 35%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px;
+  border: 2px solid #d8d8d8;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px gray; }
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #2e2e2e !important;
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(190, 190, 190, 0.25) !important; }
+
+@media screen and (max-width: 600px) {
+  /*nav y footer responsive para las 5 paginas*/
+  .busqueda, .btn {
+    display: none; }
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .logosredes {
+    justify-content: center; }
+  .logo h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    padding: 5px; }
+  .formNav li a {
+    font-size: 15px;
+    padding: 10px;
+    display: block; }
+  .logosredes i {
+    margin: 5px 10px;
+    font-size: 20px; }
+  .redesUl li a {
+    font-size: 10px;
+    /*nav y footer responsive para las 5 paginas*/ }
+  .infofooter {
+    font-size: 9px; }
+  .center {
+    display: grid;
+    grid-template-columns: 80%;
+    /*index responsive*/
+    grid-template-rows: 80px 300px 300px;
+    grid-template-areas: "a1" "a2" "a3";
+    row-gap: 10px;
+    justify-items: center; }
+  .textSup {
+    grid-area: a1;
+    align-self: center; }
+  #imgUnoCarousel {
+    border-radius: 0px;
+    margin-top: 50px; }
+  #imgDosCarousel {
+    border-radius: 0px;
+    margin-top: 50px; }
+  #filaDosIndex {
+    height: 400px; }
+  .lineaIndex {
+    align-items: center;
+    width: 100%;
+    height: 1px;
+    margin: 0px 0px;
+    box-shadow: 4px 1px 2px gray;
+    background-color: black;
+    animation-name: lineaContacto;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    margin-top: 20px; }
+  .card {
+    flex-wrap: wrap !important;
+    height: auto;
+    box-shadow: 5px 5px 5px gray;
+    width: 100%; }
+  /*off road main responsive*/
+  .centerOffRoad {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 200px 600px;
+    grid-template-areas: "a1 a1" "a2 a2";
+    justify-items: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center; }
+  .textoOffRoad {
+    align-items: center;
+    grid-area: a1; }
+  .textoOffRoad p {
+    font-size: 14px;
+    font-family: cursive; }
+  .textoOffRoad h3 {
+    margin: 15px;
+    font-family: 'Shadows Into Light', cursive;
+    text-decoration: underline;
+    font-size: 40px;
+    text-align: center; }
+  .lineaOffRoad {
+    align-items: center;
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    margin: 0px 0px;
+    grid-area: a2;
+    align-self: start;
+    margin-top: 20px; }
+  .catalogoOffRoad img {
+    width: 100%;
+    height: 100%; }
+  .catalogoOffRoad {
+    justify-content: center;
+    grid-area: a2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 125px 125px;
+    grid-template-areas: "c1 c2 " "c3 c4 " "c5 c6";
+    row-gap: 10%;
+    column-gap: 10%; }
+  #xr {
+    grid-area: c1; }
+  #xtt {
+    grid-area: c2; }
+  #tenere {
+    grid-area: c3; }
+  #tornado {
+    grid-area: c4; }
+  #xre {
+    grid-area: c5; }
+  .cuadros {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px grey; }
+  .valor {
+    margin: 5px 0px;
+    font-size: 15px; }
+  .año {
+    margin: 10px 0px;
+    color: #646464;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: 10px; }
+  .modelo {
+    margin: 10px 10px;
+    color: #646464;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px; }
+  .cuadros img {
+    margin: 10px 10px; }
+  /*classic respondive*/
+  .centerClassic {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 200px 600px;
+    grid-template-areas: "a1 a1" "a2 a2";
+    justify-items: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center; }
+  .textoClassic {
+    align-items: center;
+    grid-area: a1; }
+  .textoClassic p {
+    font-size: 14px;
+    font-family: cursive; }
+  .textoClassic h3 {
+    margin: 15px;
+    font-family: 'Shadows Into Light', cursive;
+    text-decoration: underline;
+    font-size: 40px;
+    text-align: center; }
+  .lineaClassic {
+    align-items: center;
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    margin: 0px 0px;
+    grid-area: a2;
+    align-self: start;
+    margin-top: 20px; }
+  .catalogoClassic img {
+    width: 100%;
+    height: 100%; }
+  .catalogoClassic {
+    justify-content: center;
+    grid-area: a2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 125px 125px;
+    grid-template-areas: "c1 c2 " "c3 c4 " "c5 c6";
+    row-gap: 10%;
+    column-gap: 10%; }
+  .cuadros {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px grey; }
+  .valor {
+    margin: 5px 0px;
+    font-size: 15px; }
+  .año {
+    margin: 10px 0px;
+    color: #646464;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: 10px; }
+  .modelo {
+    margin: 10px 10px;
+    color: #646464;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px; }
+  .cuadros img {
+    margin: 10px 10px; }
+  #fz {
+    grid-area: c5; }
+  /*Sobre nosotros main responsive*/
+  .primerParrafo {
+    grid-area: t2;
+    justify-content: center;
+    font-size: 20px;
+    align-self: start;
+    margin: 35px 0px 0px 0px; }
+  .segundoParrafo {
+    text-align: center;
+    grid-area: t2;
+    align-self: end;
+    font-size: 18px;
+    margin-bottom: 35px; }
+  /*contacto responsive*/
+  .sectionGrid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 250px;
+    grid-template-areas: "cto1 cto1";
+    justify-content: center;
+    justify-items: center;
+    align-items: center; }
+  .form {
+    display: flex;
+    flex-direction: column; }
+  .form input {
+    margin: 0px 0px 15px 0px; }
+  .lineaContacto {
+    align-items: center;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 0px 0px;
+    grid-area: cto1;
+    align-self: center; }
+  .TextCto {
+    align-items: end;
+    grid-area: cto1;
+    margin: 20px 0px;
+    font-family: cursive;
+    font-size: 14px; }
+  .TextContacto {
+    font-size: 14px;
+    margin-top: 30px; }
+  .formText {
+    grid-area: cto1;
+    width: 100%;
+    text-align: center;
+    justify-self: center; }
+  .formText h3 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px; }
+  .contenedorContacto h4 {
+    margin: 15px 0px;
+    font-family: cursive;
+    font-style: normal; }
+  .form input:focus {
+    border: 1px solid #b46c00; }
+  .formContainer {
+    width: 250px;
+    background-color: #910303;
+    padding: 30px;
+    margin: auto;
+    margin: 50px;
+    border-radius: 20px;
+    color: white;
+    grid-area: cto2; }
+  .control {
+    width: 90%;
+    background-color: #910303;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid white;
+    font-family: 'calibri', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white; }
+  .formContacto {
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #525252; } }
