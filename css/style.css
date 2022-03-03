@@ -156,7 +156,7 @@ header {
   font-family: monospace;
   font-size: 12px !important;
   color: #ebebeb;
-  margin: 0px 10px; }
+  margin: 0px 20px 0px  0px; }
 
 .infofooter2 h4 {
   font-family: monospace;
@@ -381,45 +381,54 @@ header {
   justify-content: center;
   justify-items: center;
   align-items: center; }
-
-.lineaContacto {
-  align-items: center;
-  width: 100%;
-  height: 1px;
-  background-color: black;
-  margin: 0px 0px;
-  grid-area: cto1;
-  align-self: center;
-  animation-name: lineaContacto;
-  animation-duration: 20s;
-  animation-iteration-count: infinite; }
+  .sectionGrid .formText {
+    grid-area: cto1;
+    width: 100%;
+    text-align: center;
+    justify-self: center; }
+    .sectionGrid .formText .lineaContacto {
+      align-items: center;
+      width: 100%;
+      height: 1px;
+      background-color: black;
+      margin: 0px 0px;
+      grid-area: cto1;
+      align-self: center;
+      animation-name: lineaContacto;
+      animation-duration: 20s;
+      animation-iteration-count: infinite; }
 
 @keyframes lineaContacto {
   0% {
     width: 100%; }
   50% {
     width: 0%; } }
+    .sectionGrid .formText h3 {
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 45px; }
+    .sectionGrid .formText .TextCto {
+      align-items: end;
+      grid-area: cto1;
+      margin: 20px 0px;
+      font-family: cursive;
+      font-size: 20px; }
+    .sectionGrid .formText .TextContacto {
+      font-size: 20px;
+      margin-top: 30px; }
 
-.TextCto {
-  align-items: end;
-  grid-area: cto1;
-  margin: 20px 0px;
-  font-family: cursive;
-  font-size: 20px; }
-
-.TextContacto {
-  font-size: 20px;
-  margin-top: 30px; }
-
-.formText {
-  grid-area: cto1;
+.btn {
   width: 100%;
-  text-align: center;
-  justify-self: center; }
+  height: auto; }
 
-.formText h3 {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 45px; }
+.btn-primary {
+  background-color: #ce2d2d !important;
+  border-color: #b12525 !important; }
+
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+  box-shadow: 0 0 0 0 !important; }
+
+.btn-primary:hover {
+  background-color: #bd0808 !important; }
 
 .formContacto {
   width: 35%;
