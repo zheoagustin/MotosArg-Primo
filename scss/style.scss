@@ -3,14 +3,17 @@
     margin: 0px;
     box-sizing: content-box ;
 }
-@import "indexmain.scss";
+ $rojoPag :rgb(206, 45, 45);
+ $fontLetraGrande :'Shadows Into Light', cursive;
+
+
 
 body{
     background-color: rgb(235, 235, 235);
     width: 100vw;
     min-height: 100vh;
     position: relative;
-    background-image: url(blanco1.jpg);
+    background-image: url(../blanco1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 100px;
@@ -38,7 +41,7 @@ header{
     width: 100vw;
 }
 .navContainer {
-    background-color: rgb(206, 45, 45);
+    background-color:$rojoPag;
     display: flex;
     margin: 0px 0px 0px 0px;
     flex-wrap:wrap;
@@ -127,7 +130,7 @@ header{
     h1{
         display:inline-block;
         color: white;
-        font-family: 'Shadows Into Light', cursive;
+        font-family: $fontLetraGrande;
         align-items: center;
         font-size: 40px;
         padding: 10px;
@@ -148,6 +151,7 @@ header{
     i{
         margin: 5px 10px;
         font-size: 30px;
+        padding-right: 10px;
     }
 }
 
@@ -167,41 +171,35 @@ header{
     justify-content: space-between;
     padding: 10px 0px ;
     
-}
-.redesUl{
-    display: flex;
-    list-style: none;
-    
-    li{
-        margin: 0px 5px;
-
-        a{
-            text-decoration: none;
-            color: rgb(235, 235, 235);
-            font-family: cursive;
-            font-size: 12px;
+    .infofooter {
+        h4{
+            font-family: monospace;
+            font-size: 12px !important;
+            color:rgb(235, 235, 235) ;
+            margin: 0px 30px 0px  20px;
         }
     }
-}
-.infofooter {
-    h4{
-        font-family: monospace;
-        font-size: 12px !important;
-        color:rgb(235, 235, 235) ;
-        margin: 0px 20px 0px  0px;
+    .redes {
+        .redesUl{
+            display: flex;
+            list-style: none;
+            
+            li{
+                margin: 0px 5px;
+        
+                a{
+                    text-decoration: none;
+                    color: rgb(235, 235, 235);
+                    font-family: cursive;
+                    font-size: 12px;
+                }
+            }
+        }
+        
     }
 }
-.infofooter2 {
-    h4{
-        font-family: monospace;
-        font-size: 12px !important;
-        color:rgb(235, 235, 235) ;
-        margin-right: 10px;
-    }
-}
-.infofooter2{
-    justify-content: start;
-}
+
+
 .mainIndex {
     width: 100%;
 }
@@ -260,7 +258,7 @@ header{
 
     h3{
         margin: 15px;
-        font-family: 'Shadows Into Light', cursive;
+        font-family: $fontLetraGrande;
         font-size: 40px;
         text-align: center;
     }
@@ -329,7 +327,7 @@ header{
         height: auto;
     }
     .btn-primary {
-        background-color: #ce2d2d !important;
+        background-color: $rojoPag!important;
         border-color:#b12525 !important;
     }
     .btn-check:focus+.btn-primary, .btn-primary:focus {
@@ -377,7 +375,7 @@ header{
     
         h3{
             margin: 15px;
-            font-family: 'Shadows Into Light', cursive;
+            font-family: $fontLetraGrande;
             font-size: 45px;
             text-align: center;}
 
@@ -402,7 +400,7 @@ header{
 
     h3{
         margin: 20px 0px 40px 0px;
-        font-family: 'Shadows Into Light', cursive;
+        font-family: $fontLetraGrande;
         font-size: 40px;
     }
 
@@ -487,7 +485,7 @@ header{
         }
 
         h3{
-            font-family: 'Shadows Into Light', cursive;
+            font-family: $fontLetraGrande;
             font-size: 45px;
         }
 
@@ -539,7 +537,7 @@ header{
 }
 @media screen and (max-width: 600px) {
     /*nav y footer responsive para las 5 paginas*/
-    .busqueda,  .btn {
+    .busqueda {
         display: none ;
     }
     .navContainer {
@@ -550,25 +548,26 @@ header{
     }
     .logosredes {
         justify-content: center;
+        
+        i{
+            margin: 5px 10px;
+            font-size: 20px;
+        }  
     }
     .logo h1 {
-        font-family: 'Shadows Into Light', cursive;
+        font-family: $fontLetraGrande;
         font-size: 30px;
         padding: 5px; }
-        .formNav li a {
+    .formNav li a {
             font-size: 15px;
             padding: 10px;
             display: block;
         }
-        .logosredes i{
-            margin: 5px 10px;
-            font-size: 20px;
-        }  
-        .redesUl li a{
+    .redesUl li a{
 
             font-size: 10px;     /*nav y footer responsive para las 5 paginas*/
         }
-        .infofooter {
+    .infofooter {
             font-size: 9px;
         }
        
@@ -622,221 +621,151 @@ header{
     width: 100vw;
     display: grid;
     grid-template-columns:40% 40% ;
-    grid-template-rows: 200px 600px ;
-    grid-template-areas: "a1 a1"
-                         "a2 a2";
+    grid-template-rows: 300px 200px ;
+    grid-template-areas: "a1 a1";
     justify-items: center;
     align-items: center;
     justify-items: center;
     justify-content: center;
+
+    .lineaOffRoad {
+        align-items: center;
+        width: 80%;
+        height: 1px;
+        background-color: black;
+        margin: 0px 0px;
+        grid-area: a1;
+        align-self: end;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
 }
 
-.textoOffRoad {
-    align-items: center;
-    grid-area: a1;
-}
-.textoOffRoad p{
-    font-size: 14px;
-    font-family: cursive;
-}
-.textoOffRoad h3{
-    margin: 15px;
-    font-family: 'Shadows Into Light', cursive;
-    text-decoration: underline;
-    font-size: 40px;
-    text-align: center;
+    .textoOffRoad {
+        align-items: center;
+        grid-area: a1;
 
-}
+        p{
+            font-size: 14px;
+            font-family: cursive;
+        }
 
-
-.lineaOffRoad {
-    align-items: center;
-    width: 80%;
-    height: 1px;
-    background-color: black;
-    margin: 0px 0px;
-    grid-area: a2;
-    align-self: start;
-    margin-top: 20px;
-}
-.catalogoOffRoad img{
-    width: 100%;
-    height: 100%;
-}
-.catalogoOffRoad {
-    justify-content: center;
-    grid-area: a2;
-    display: grid;
-    grid-template-columns:50% 50%;
-    grid-template-rows: 125px 125px ;
-    grid-template-areas: "c1 c2 "
-                         "c3 c4 "
-                         "c5 c6";
-    row-gap: 10%;
-    column-gap: 10%;
-}
-#xr {
-    grid-area: c1;
-}
-#xtt {
-    grid-area: c2;
-}
-#tenere {
-    grid-area: c3;
-}
-#tornado {
-    grid-area: c4;
-}
-#xre {
-    grid-area: c5;
-}
-.cuadros {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    text-align: center;
-    border: 1px solid black;
-    box-shadow: 5px 5px 5px grey;
+        h3{
+            margin: 15px;
+            font-family: $fontLetraGrande;
+            text-decoration: none;
+            font-size: 40px;
+            text-align: center;
+    
+        }
 }
 
-.valor{
-    margin: 5px 0px;
-    font-size: 15px;
 
-}
-.año{
-    margin: 10px 0px;
-    color: rgb(100, 100, 100);
-    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: italic;
-    font-size: 10px;
 
-}
-.modelo{
-    margin: 10px 10px;
-    color: rgb(100, 100, 100);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
-}
-.cuadros img{
-    margin:10px 10px;
-}
 /*classic respondive*/
 .centerClassic {
     width: 100vw;
     display: grid;
     grid-template-columns:40% 40% ;
-    grid-template-rows: 200px 600px ;
-    grid-template-areas: "a1 a1"
-                         "a2 a2";
+    grid-template-rows: 300px;
+    grid-template-areas: "a1 a1";
     justify-items: center;
     align-items: center;
     justify-items: center;
     justify-content: center;
+
+    .textoClassic {
+        align-items: center;
+        grid-area: a1;
+    
+        h3{
+            margin: 15px;
+            font-family: $fontLetraGrande;
+            text-decoration: none;
+            font-size: 40px;
+            text-align: center;
+        }
+    
+        p{
+            font-size: 14px;
+            font-family: cursive;
+        }
+    }
+
+    .lineaClassic {
+        align-items: center;
+        width: 80%;
+        height: 1px;
+        background-color: black;
+        margin: 0px 0px;
+        grid-area: a1;
+        align-self: end;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
-.textoClassic {
-    align-items: center;
-    grid-area: a1;
-}
-.textoClassic p{
-    font-size: 14px;
-    font-family: cursive;
-}
-.textoClassic h3{
-    margin: 15px;
-    font-family: 'Shadows Into Light', cursive;
-    text-decoration: underline;
-    font-size: 40px;
-    text-align: center;
 
-}
-
-
-.lineaClassic {
-    align-items: center;
-    width: 80%;
-    height: 1px;
-    background-color: black;
-    margin: 0px 0px;
-    grid-area: a2;
-    align-self: start;
-    margin-top: 20px;
-}
-.catalogoClassic img{
-    width: 100%;
-    height: 100%;
-}
-.catalogoClassic {
-    justify-content: center;
-    grid-area: a2;
-    display: grid;
-    grid-template-columns:50% 50%;
-    grid-template-rows: 125px 125px ;
-    grid-template-areas: "c1 c2 "
-                         "c3 c4 "
-                         "c5 c6";
-    row-gap: 10%;
-    column-gap: 10%;
-}
-.cuadros {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    text-align: center;
-    border: 1px solid black;
-    box-shadow: 5px 5px 5px grey;
-}
-
-.valor{
-    margin: 5px 0px;
-    font-size: 15px;
-
-}
-.año{
-    margin: 10px 0px;
-    color: rgb(100, 100, 100);
-    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: italic;
-    font-size: 10px;
-
-}
-.modelo{
-    margin: 10px 10px;
-    color: rgb(100, 100, 100);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
-}
-.cuadros img{
-    margin:10px 10px;
-}
-#fz {
-    grid-area: c5;
-}
 /*Sobre nosotros main responsive*/
-.primerParrafo  {
-    grid-area: t2;
-    justify-content: center;
-    font-size: 20px;
-    align-self: start;
-    margin: 35px 0px 0px 0px;
-}
-.segundoParrafo {
+.centerText  {
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows:200px 600px ;
+    grid-template-areas: "t1 t1"
+                         "t2 t2";
+    align-items:center ;
     text-align: center;
-    grid-area: t2;
-    align-self: end;
-    font-size: 18px;
-    margin-bottom: 35px;
+    width: 100vw;
+    justify-items: center;
+    
+    .primerParrafo  {
+        grid-area: t2;
+        justify-content: center;
+        font-size: 20px;
+        align-self: start;
+        margin: 35px 0px 0px 0px;
+    }
+    .segundoParrafo {
+        text-align: center;
+        grid-area: t2;
+        align-self: end;
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
 }
+
 /*contacto responsive*/
 .sectionGrid {
     display: grid;
     grid-template-columns:40% 40%;
-    grid-template-rows:250px;
+    grid-template-rows:450px;
     grid-template-areas:"cto1 cto1";
     justify-content: center;
     justify-items: center;
     align-items: center;
+
+    .lineaContacto {
+        align-items: center;
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        margin: 0px 0px;
+        grid-area: cto1;
+        align-self: center;
+    }
+
+    .TextCto{
+        align-items: end;
+        grid-area: cto1;
+        margin: 20px 0px;
+        font-family: cursive;
+        font-size: 14px;
+    }
+
+    .TextContacto{
+        font-size: 14px;
+        margin-top: 30px;  
+    }
     
 }
 .form {
@@ -848,57 +777,21 @@ header{
     margin: 0px 0px 15px 0px;
  
 }
-.lineaContacto {
-    align-items: center;
-    width: 100%;
-    height: 1px;
-    background-color: black;
-    margin: 0px 0px;
-    grid-area: cto1;
-    align-self: center;
-}
-.TextCto{
-    align-items: end;
-    grid-area: cto1;
-    margin: 20px 0px;
-    font-family: cursive;
-    font-size: 14px;
 
-}
-.TextContacto{
-    font-size: 14px;
-    margin-top: 30px;
-    
-}
+
 .formText {
     grid-area: cto1;
     width: 100%;
     text-align: center;
     justify-self: center;
-}
-.formText h3{
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 35px;
-}
 
-.contenedorContacto h4{
-    margin: 15px 0px;
-    font-family: cursive;
-    font-style: normal;
+    h3{
+        font-family: $fontLetraGrande;
+        font-size: 35px;
+    }
 }
 .form input:focus{
     border:1px solid rgb(180, 108, 0);
-}
-.formContainer {
-    width: 250px;
-    background-color:rgb(145, 3, 3);
-    padding: 30px;
-    margin: auto;
-    margin: 50px;
-    border-radius: 20px;
-    color: white;
-    grid-area: cto2;
-    
 }
 .control{
     width: 90%;
