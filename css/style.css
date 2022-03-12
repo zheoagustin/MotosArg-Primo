@@ -165,10 +165,7 @@ header {
 #filaDosIndex {
   height: 800px; }
 
-#imgUnoCarousel {
-  border-radius: 5px; }
-
-#imgDosCarousel {
+#imgUnoCarousel, #imgDosCarousel {
   border-radius: 5px; }
 
 #colTextIndex h3 {
@@ -208,10 +205,7 @@ header {
     font-family: "Shadows Into Light", cursive;
     font-size: 40px;
     text-align: center; }
-  .textoOffRoad .p1 {
-    text-align: center;
-    font-family: cursive; }
-  .textoOffRoad .p2 {
+  .textoOffRoad .p1, .textoOffRoad .p2 {
     text-align: center;
     font-family: cursive; }
 
@@ -305,7 +299,7 @@ header {
       font-family: "Shadows Into Light", cursive;
       font-size: 45px;
       text-align: center; }
-    .centerClassic .textoClassic .p1 {
+    .centerClassic .textoClassic .p1, .centerClassic .textoClassic .textoOffRoad .p2, .textoOffRoad .centerClassic .textoClassic .p2 {
       text-align: center;
       font-family: cursive; }
 
@@ -376,13 +370,13 @@ header {
     text-align: center;
     justify-self: center; }
     .sectionGrid .formText .lineaContacto {
+      grid-area: cto1;
       align-items: center;
       width: 100%;
       height: 1px;
-      background-color: black;
       margin: 0px 0px;
-      grid-area: cto1;
-      align-self: center;
+      box-shadow: 4px 1px 2px gray;
+      background-color: black;
       animation-name: lineaContacto;
       animation-duration: 20s;
       animation-iteration-count: infinite; }
@@ -473,7 +467,7 @@ header {
   .textSup {
     grid-area: a1;
     align-self: center; }
-  #imgUnoCarousel {
+  #imgUnoCarousel, #imgDosCarousel {
     border-radius: 0px;
     margin-top: 50px; }
   #imgDosCarousel {

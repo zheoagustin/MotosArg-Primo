@@ -7,7 +7,18 @@
  $fontLetraGrande :'Shadows Into Light', cursive;
 
 
-
+@mixin lineas ($ancho , $altura , $nombreAnimacion){
+    align-items: center;
+    width: $ancho;
+    height: $altura;
+    margin: 0px 0px;
+    box-shadow: 4px 1px 2px gray;
+    background-color: black;
+    animation-name: $nombreAnimacion;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    
+}
 body{
     background-color: rgb(235, 235, 235);
     width: 100vw;
@@ -216,8 +227,7 @@ header{
 
 }
 #imgDosCarousel {
-    border-radius: 5px;
-
+    @extend #imgUnoCarousel;
 }
 #colTextIndex {
     h3 {
@@ -226,15 +236,8 @@ header{
         margin-top: 60px;
     }
     .lineaIndex {
-        align-items: center;
-        width: 100%;
-        height: 1px;
-        margin: 0px 0px;
-        box-shadow: 4px 1px 2px gray;
-        background-color: black;
-        animation-name: lineaContacto;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
+    @include lineas(100%,1px ,lineaContacto)    
+    
     }
 }
 
@@ -268,24 +271,23 @@ header{
  
     }
     .p2{
-        text-align: center;
-        font-family: cursive;
+        @extend .p1;
     }
 }
 
 
 .lineaOffRoad {
-    align-items: center;
-    width: 60%;
-    height: 1px;
-    margin: 0px 0px;
-    grid-area: a1;
-    box-shadow: 2px 2px 2px gray;
-    align-self: end;
-    background-color: black;
-    animation-name: linea;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
+        align-items: center;
+        width: 60%;
+        height: 1px;
+        margin: 0px 0px;
+        grid-area: a1;
+        box-shadow: 2px 2px 2px gray;
+        align-self: end;
+        background-color: black;
+        animation-name: linea;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
 }
 .container {
     #filaUnoOffroad {
@@ -467,16 +469,8 @@ header{
         justify-self: center;
 
         .lineaContacto {
-            align-items: center;
-            width: 100%;
-            height: 1px;
-            background-color: black;
-            margin: 0px 0px;
             grid-area: cto1;
-            align-self: center;
-            animation-name: lineaContacto;
-            animation-duration: 20s;
-            animation-iteration-count: infinite;
+            @include lineas(100%,1px ,lineaContacto )
         }
 
         @keyframes lineaContacto {
