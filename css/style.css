@@ -271,7 +271,8 @@ header {
   justify-items: center;
   align-items: center;
   justify-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 35px; }
   .centerClassic .lineaClassic {
     align-items: center;
     height: 1px;
@@ -305,6 +306,9 @@ header {
     .centerClassic .textoClassic .p1, .centerClassic .textoClassic .textoOffRoad .p2, .textoOffRoad .centerClassic .textoClassic .p2 {
       text-align: center;
       font-family: cursive; }
+
+#filaTresClassic {
+  display: none; }
 
 /*main classic fin*/
 /*main sobrenosotros*/
@@ -460,7 +464,8 @@ header {
   .infofooter {
     font-size: 9px; }
     .infofooter h4 {
-      font-size: 9px !important; }
+      font-size: 9px !important;
+      margin: 0px 10px 0px 10px !important; }
   .center {
     display: grid;
     grid-template-columns: 80%;
@@ -507,7 +512,7 @@ header {
     align-items: center;
     justify-items: center;
     justify-content: center;
-    margin-bottom: 30px; }
+    margin-bottom: 50px; }
     .centerOffRoad .lineaOffRoad {
       align-items: center;
       width: 80%;
@@ -569,6 +574,12 @@ header {
       align-self: end;
       margin-top: 20px;
       margin-bottom: 20px; }
+  #filaTresClassic {
+    display: flex !important; }
+  #cardUnoClassic {
+    display: none; }
+  #cardDosClassic {
+    display: none; }
   /*Sobre nosotros main responsive*/
   .centerText {
     display: grid;

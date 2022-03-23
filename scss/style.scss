@@ -355,6 +355,7 @@ header{
     align-items: center;
     justify-items: center;
     justify-content: center;
+    margin-bottom: 35px;
 
     .lineaClassic {
         align-items: center;
@@ -389,6 +390,9 @@ header{
             font-family: cursive;}
         }
 }
+    #filaTresClassic {
+        display: none;
+    }
 /*main classic fin*/
 
 /*main sobrenosotros*/
@@ -568,6 +572,7 @@ header{
             font-size: 9px;
             h4 {
                 font-size: 9px !important;
+                margin: 0px 10px 0px 10px !important;
             }
         }
        
@@ -627,7 +632,7 @@ header{
     align-items: center;
     justify-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
     .lineaOffRoad {
         align-items: center;
@@ -714,6 +719,15 @@ header{
         margin-bottom: 20px;
     }
 }
+    #filaTresClassic {
+        display: flex !important;
+    }
+    #cardUnoClassic {
+        display: none;
+    }
+    #cardDosClassic {
+        display: none;
+    }
 
 
 /*Sobre nosotros main responsive*/
