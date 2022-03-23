@@ -142,7 +142,7 @@ header {
   padding: 10px 0px; }
   .footer .infofooter h4 {
     font-family: monospace;
-    font-size: 12px !important;
+    font-size: 12px;
     color: #ebebeb;
     margin: 0px 30px 0px  20px; }
   .footer .redes .redesUl {
@@ -229,6 +229,9 @@ header {
   margin-bottom: 120px;
   margin-top: 140px;
   height: 300px; }
+
+.container #filaTresOffroad {
+  display: none; }
 
 .card {
   flex-wrap: wrap !important;
@@ -429,7 +432,7 @@ header {
   outline: 0;
   box-shadow: 0 0 0 3px rgba(190, 190, 190, 0.25) !important; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 576px) {
   /*nav y footer responsive para las 5 paginas*/
   .busqueda {
     display: none; }
@@ -456,6 +459,8 @@ header {
     /*nav y footer responsive para las 5 paginas*/ }
   .infofooter {
     font-size: 9px; }
+    .infofooter h4 {
+      font-size: 9px !important; }
   .center {
     display: grid;
     grid-template-columns: 80%;
@@ -501,7 +506,8 @@ header {
     justify-items: center;
     align-items: center;
     justify-items: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 30px; }
     .centerOffRoad .lineaOffRoad {
       align-items: center;
       width: 80%;
@@ -511,7 +517,7 @@ header {
       grid-area: a1;
       align-self: end;
       margin-top: 20px;
-      margin-bottom: 30px; }
+      margin-bottom: 0px; }
   .textoOffRoad {
     align-items: center;
     grid-area: a1; }
@@ -524,6 +530,12 @@ header {
       text-decoration: none;
       font-size: 40px;
       text-align: center; }
+  #filaTresOffroad {
+    display: flex !important; }
+  #cardUno {
+    display: none; }
+  #cardDos {
+    display: none; }
   /*classic respondive*/
   .centerClassic {
     width: 100vw;
@@ -561,7 +573,7 @@ header {
   .centerText {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 600px;
+    grid-template-rows: 200px 700px;
     grid-template-areas: "t1 t1" "t2 t2";
     align-items: center;
     text-align: center;
