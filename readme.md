@@ -14,3 +14,4 @@ Cuenta con 5 paginas:
 *Contacto
 
 En las cuales esas 5 paginas estan diseñadas con FlexBox (Header y Footer), Grid (Main) y Bootstrap (Main)
+Funciona perfectamete tanto como tamaño Desktop y tamaño Mobile
